@@ -3,11 +3,11 @@
 {
   "@context": "http://www.schema.org",
   "@type": "Event",
-  "name": "London Perl Workshop, 2019",
+  "name": "London Perl Workshop, 2024",
   "url": "[% global.config.general_full_uri %]",
   "description": "London Perl Workshop. Perl Conference and training in London.",
-  "startDate": "2019-10-19T09:30",
-  "endDate": "2019-10-19T18:00",
+  "startDate": "2024-10-19T09:30",
+  "endDate": "2024-10-19T18:00",
   "location": {
     "@type": "Place",
     "name": "David Game College",
