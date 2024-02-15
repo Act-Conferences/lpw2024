@@ -1,0 +1,75 @@
+[% WRAPPER ui banner = 1%]
+
+<h2>What is it?</h2>
+
+<p>
+The London Perl Workshop (LPW) is a free one-day technical conference in Central London, United Kingdom.
+</p>
+<p>
+    <ul>
+        <li><b>WHEN:</b> Saturday 19th October 2019: arrive from 9:15 for a <a href="[% make_uri('schedule') %]?day=2019-10-19">9:50 start</a></li>
+        <li><b>WHERE:</b> David Game College, 31 Jewry St, London EC3N 2ET (<a href="#map">map</a>)</li>
+    </ul>
+</p>
+
+<h2>Quick Links</h2>
+
+<ul>
+  <li><a href="[% make_uri('event/2158') %]">Friday evening pub meeting</a></li>
+  <li><a href="[% make_uri('schedule') %]?day=2019-10-19">Saturday's schedule</a></li>
+  <li><a href="[% make_uri('lunch.html') %]">Saturday lunch ideas</a></li>
+</ul>
+
+<h2>About</h2>
+
+<p>Run by volunteers from the London Perl Community, LPW has <a href="[% make_uri('schedule') %]?day=2019-10-19">talks</a> about Perl 5, Perl 6 and other languages, technologies and topics.<p> 
+
+<p>The LPW is an inclusive event and we would love to have you attend, whether this is your first time learning about Perl, or your 14th workshop. We encourage attendees and speakers from people of any age, background or circumstance, and we are open to receiving proposals for talks on any subject you think your fellow attendees will find interesting.</p>
+
+<p>Further news will be posted here and to our <a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>.
+</p>
+
+<h2>How can I attend?</h2>
+
+<p>To attend is free, all you need to do is <a href="[% make_uri('register') %]">create a new user account</a> or <a href="[% make_uri('login') %]">log in</a> and then <a href="[% make_uri('register') %]">register</a>.</p>
+
+<p>London will be very busy on the 19th of October, so we encourage you to book travel and accommodation as soon as possible.</p>
+
+<h2>Sponsors</h2>
+<p> The LPW is reliant on the generosity of our sponsors to run great community event at no cost to attendees. If you or your company would like to sponsor the London Perl Workshop then please see our <a href="[% make_uri('sponsoring.html') %]">sponsorship information</a> and do not hesitate to contact <a href="[% make_uri('team.html') %]">the organisers</a> if you have any questions.</p>
+
+<p>We also appreciate <a href="[% make_uri('purchase') %]">donations from attendees</a> greatly.</p>
+
+[% news = global.news(4);
+   IF news.size > 3;
+     more = news.pop;
+   END;
+ %]
+
+[% IF news.size %]
+<h2>Latest News</h2>
+[% FOREACH item = news %]
+<div class="news-entry">
+ <h3 class="news-header">
+  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span>
+ </h3>
+ <div class="news-text">
+  [% item.content %]
+ </div>
+</div>
+[% END %]
+[% END %]
+
+[% IF more %]
+<p>
+ <a href="[% make_uri('news') %]" class="news-link">Older announcements</a>
+</p>
+[% END %]
+
+<a name="map"></a>
+<div id=map>
+	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DYK_2kbbyIDWh0xcEnAJe-mUgsfemHJu" width="640" height="480" loading="lazy"></iframe>
+</div>
+
+[% END %]
