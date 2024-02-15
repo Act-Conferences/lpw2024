@@ -1,5 +1,5 @@
 # lpw2024
-London Perl Workshop 2024
+London Perl & Raku Workshop 2024
 
 This repo contains the front-end code for LPW 2024, an annual one-day UK Perl conference.
 
