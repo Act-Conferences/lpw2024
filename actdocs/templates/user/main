@@ -43,9 +43,12 @@
 <ul>
     [% IF global.request.user.has_registered %]
       <li><a href="[% make_uri('purchase.html') %]">make a donation to LPW</a><br /></li>
-      <li><a href="[% make_uri('newtalk') %]">submit a talk</a><br /></li>
     [% ELSIF !global.config.closed %]
       <li><a href="[% make_uri('register') %]">{{register for this conference}}</a><br /></li>
+    [% END %]
+    [% IF global.config.talks_submissions_open
+       AND global.request.user.has_registered %]
+        <li><a href="[% make_uri('newtalk') %]">{{submit a talk}}</a><br /></li>
     [% END %]
     <li><a href="[% make_uri('change') %]">{{update your information}}</a><br /></li>
     <li><a href="[% make_uri('photo') %]">{{manage your photo}}</a><br /></li>
@@ -59,10 +62,6 @@
            [% END %]
           </ul>
         </li>
-    [% END %]
-    [% IF global.config.talks_submissions_open
-       AND global.request.user.has_registered %]
-        <li><a href="[% make_uri('newtalk') %]">{{submit a talk}}</a><br /></li>
     [% END %]
     <li><a href="[% make_uri('logout') %]">{{log out}}</a></li>
     [% IF can_unregister %]
