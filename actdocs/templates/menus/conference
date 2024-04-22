@@ -3,6 +3,7 @@
     <i class="fa fa-bullhorn hidden-md hidden-lg"></i><span class="hidden-sm"> Conference</span> <b class="caret"></b>
   </a>
   <ul class="dropdown-menu">
+	<li><a href="[% make_uri('purchase.html') %]">Make a Donation</a></li>
     <li><a href="[% make_uri('sponsors.html') %]">Sponsors</a></li>
     <li><a href="[% make_uri('sponsoring.html') %]">Sponsoring</a></li>
     <li><a href="[% make_uri('team.html') %]">Organisers</a></li>
