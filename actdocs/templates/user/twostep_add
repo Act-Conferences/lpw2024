@@ -26,6 +26,10 @@
             <input type="submit" name="twostepsubmit" class="btn btn-primary btn-lg" value="OK" />
           </div>
         </div>
+        <div class="alert alert-warning">
+          Please note that some email providers have been rejecting emails from our domain, if you do not receive an email
+          within a ten minutes try again or try a different email account.
+        </div>
       </form>
     </div>
   </div>
