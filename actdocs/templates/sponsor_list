@@ -71,6 +71,11 @@
         </a>
     </div>
 
+    <div class="col-xs-12 col-xs-offset-1 text-center;">
+        <a href="https://geizhals.de/">
+            <img src="[% make_uri_info('images/logos/scaled/geizhals.svg') %]" border="0" alt="Geizhals" class="img-responsive" style="margin-bottom: 2em;">
+        </a>
+    </div>
 <!--
     <div class="col-xs-12 col-xs-offset-1 text-center;">
         <a href="https://adestra.com/">
