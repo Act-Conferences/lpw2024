@@ -80,6 +80,12 @@
             <img src="[% make_uri_info('images/logos/scaled/datensegler.png') %]" border="0" alt="Datensegler" class="img-responsive" style="margin-bottom: 2em;">
         </a>
     </div>
+
+    <div class="col-xs-12 col-xs-offset-1 text-center;">
+        <a href="https://www.spareroom.co.uk/">
+            <img src="[% make_uri_info('images/logos/scaled/spareroom.png') %]" border="0" alt="Spareroom" class="img-responsive" style="margin-bottom: 2em;">
+        </a>
+    </div>
 <!--
     <div class="col-xs-12 col-xs-offset-1 text-center;">
         <a href="https://adestra.com/">
