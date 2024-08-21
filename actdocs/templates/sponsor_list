@@ -58,7 +58,6 @@
             <img src="[% make_uri_info('images/logos/scaled/cvl.png') %]" border="0" alt="CV Library" class="img-responsive" style="margin-bottom: 2em;">
         </a>
     </div>
-</div>
 
 <!-- Silver -->
 <div class="col-xs-12" style="margin-bottom: 1em;"><strong>Silver:</strong></div>
