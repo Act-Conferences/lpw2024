@@ -3,7 +3,7 @@
 <div class="row">
   <div class="panel panel-default">
     <div class="panel-body">
-      <div class="col-md-6 form-horizontal">
+      <div class="col-md form-horizontal">
         <div class="form-group">
           <label class="col-xs-3 control-label">{{By}}:</label>
           <div class="col-xs-9">
@@ -142,7 +142,6 @@
         </div>
       </div>
 
-      <div class="col-md-6">
         [% IF attendees.size %]
           <table class="table">
             <thead>
@@ -175,7 +174,6 @@
             </form>
           </div>
         [% END %]
-      </div>
     </div>
     <div class="panel-footer"><a href="[% make_uri('talks') %]">&laquo; {{List of talks}}</a></div>
   </div>
