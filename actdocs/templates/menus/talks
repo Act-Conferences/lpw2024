@@ -26,7 +26,7 @@
     [% END %]
 
       <li class="divider"></li>
-      <li><a href="[% make_uri_info('lunch.html') %]">Lunch options</a>
+      <li><a href="[% make_uri_info('lunch.html') %]">Lunch &amp; Socials</a>
 
     [% IF global.request.user.is_talks_admin %]
       <li class="divider"></li>
