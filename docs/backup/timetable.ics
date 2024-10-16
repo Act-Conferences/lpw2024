@@ -47,18 +47,6 @@ UID:http://act.yapc.eu/lpw2024/backup/talk/7889
 URL:http://act.yapc.eu/lpw2024/backup/talk/7889
 END:VEVENT
 BEGIN:VEVENT
-ATTENDEE:yadu singh
-COMMENT:1 attendees
-DESCRIPTION:news and future of migrations with Red ORM
-DTEND;TZID=Europe/London:20241026T101000
-DTSTART;TZID=Europe/London:20241026T093000
-LOCATION:The Study
-ORGANIZER:Fernando Oliveira
-SUMMARY:Red Migrations
-UID:http://act.yapc.eu/lpw2024/backup/talk/7892
-URL:http://act.yapc.eu/lpw2024/backup/talk/7892
-END:VEVENT
-BEGIN:VEVENT
 ATTENDEE:Salve J. Nilsen
 ATTENDEE:Ian Brierley
 ATTENDEE:Gianni Ceccarelli
@@ -71,7 +59,10 @@ ATTENDEE:Richard Pillar
 ATTENDEE:Iain Campbell
 ATTENDEE:Dimitrios Kechagias
 ATTENDEE:Boyd Duffee
-COMMENT:12 attendees
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:15 attendees
 DESCRIPTION:This talk will introduce the recently released Perl implementat
  ion of the OpenTelemetry API and SDK.\n\nThere will be a brief overview of
   what OpenTelemetry is and the challenges of starting a new Perl implement
@@ -105,13 +96,14 @@ ATTENDEE:Michael Woods
 ATTENDEE:Dimitrios Kechagias
 ATTENDEE:sujin seo
 ATTENDEE:Leon Brocard
-COMMENT:17 attendees
+ATTENDEE:Thibault Duponchelle
+COMMENT:18 attendees
 DESCRIPTION:Almost everybody seems to think XS is difficult. I think they'r
  e wrong\, I just think it's usually really poorly explained.\n\nI'll show 
  you how.
 DTEND;TZID=Europe/London:20241026T134000
 DTSTART;TZID=Europe/London:20241026T130000
-LOCATION:The Ballroom
+LOCATION:The Library
 ORGANIZER:Leon Timmermans
 SUMMARY:A modern introduction to XS
 UID:http://act.yapc.eu/lpw2024/backup/talk/7899
@@ -131,7 +123,12 @@ ATTENDEE:Richard Pillar
 ATTENDEE:John McCarthy
 ATTENDEE:Joel Vivian
 ATTENDEE:Leon Brocard
-COMMENT:13 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:18 attendees
 DESCRIPTION:In the talk\, I would like to talk about the core enhancements 
  in the latest release Perl v5.40. I am going to present the enhancements w
  ith easy to follow example giving background and history of each. I may no
@@ -139,7 +136,7 @@ DESCRIPTION:In the talk\, I would like to talk about the core enhancements
  nt enhancements.
 DTEND;TZID=Europe/London:20241026T141000
 DTSTART;TZID=Europe/London:20241026T135000
-LOCATION:The Library
+LOCATION:The Ballroom
 ORGANIZER:Mohammad Anwar
 SUMMARY:What's new in Perl v5.40?
 UID:http://act.yapc.eu/lpw2024/backup/talk/7900
@@ -175,7 +172,10 @@ ATTENDEE:Michael Woods
 ATTENDEE:yadu singh
 ATTENDEE:Ian Boddison
 ATTENDEE:John McCarthy
-COMMENT:10 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+COMMENT:13 attendees
 DESCRIPTION:This presentation explores how you can make files generated fro
  m Perl available to the user as a recently opened file
 DTEND;TZID=Europe/London:20241026T144000
@@ -208,7 +208,12 @@ ATTENDEE:Sаm Kington
 ATTENDEE:Joel Vivian
 ATTENDEE:Boyd Duffee
 ATTENDEE:Leon Brocard
-COMMENT:21 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:26 attendees
 DESCRIPTION:It's been a a few years since my "Perl in 2025" talk. Lets take
   a look at the results of the things I said we might do\, and consider the
   next five years of possible future development.
@@ -240,7 +245,12 @@ ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
 ATTENDEE:Joel Vivian
 ATTENDEE:Ian Boddison
-COMMENT:19 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:24 attendees
 DESCRIPTION:Using Perl with Amazon's serverless Lambda and ECS products. Cu
  rrent options for using AWS APIs from Perl for automation and integration.
   Keeping the Ops people in DevOps happy.
@@ -264,7 +274,9 @@ ATTENDEE:Sébastien Feugère
 ATTENDEE:yadu singh
 ATTENDEE:Iain Campbell
 ATTENDEE:Sаm Kington
-COMMENT:11 attendees
+ATTENDEE:John Imrie
+ATTENDEE:AndyR
+COMMENT:13 attendees
 DESCRIPTION:Why I adopted Telegram::Bot\, what happened when I did\, and ho
  w far the rabbit hole took me
 DTEND;TZID=Europe/London:20241026T120000
@@ -292,7 +304,12 @@ ATTENDEE:yadu singh
 ATTENDEE:Iain Campbell
 ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
-COMMENT:16 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Michael Woods
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:21 attendees
 DESCRIPTION:For almost a decade I've provided companies with Perl training 
  as part of their onboarding process.\n\nIn that time\, I've seen that ther
  e are challenges to talent management of a Perl team\, so when I see a com
@@ -329,7 +346,7 @@ DESCRIPTION:The backwards compatibility of Perl software is wonderful. That
  , fortunately\, resolve.
 DTEND;TZID=Europe/London:20241026T141000
 DTSTART;TZID=Europe/London:20241026T135000
-LOCATION:The Ballroom
+LOCATION:The Library
 ORGANIZER:Paul Cochrane
 SUMMARY:Fixing a fifteen-year-old curve fit bug
 UID:http://act.yapc.eu/lpw2024/backup/talk/7912
@@ -349,7 +366,11 @@ ATTENDEE:Iain Campbell
 ATTENDEE:Sаm Kington
 ATTENDEE:Ian Boddison
 ATTENDEE:Leon Brocard
-COMMENT:13 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+COMMENT:17 attendees
 DESCRIPTION:EU is getting new Cybersecurity regulations!\n\nThese are mostl
  y directed at manufacturers and critical infrastructure providers\, but si
  nce Open Source ecosystems are upstream\, they will also affect anyone pub
@@ -365,7 +386,7 @@ DESCRIPTION:EU is getting new Cybersecurity regulations!\n\nThese are mostl
  the coming changes.
 DTEND;TZID=Europe/London:20241026T134000
 DTSTART;TZID=Europe/London:20241026T130000
-LOCATION:The Library
+LOCATION:The Ballroom
 ORGANIZER:Salve J. Nilsen
 SUMMARY:Metadata\, CPAN\, FOSS Supply Chains\, and EU's Cyber Resilience Ac
  t
@@ -386,7 +407,9 @@ ATTENDEE:Ed J
 ATTENDEE:Leo Lapworth
 ATTENDEE:Sawyer X
 ATTENDEE:Mickey Nasriachi
-COMMENT:13 attendees
+ATTENDEE:Daniel Mita
+ATTENDEE:Thibault Duponchelle
+COMMENT:15 attendees
 DESCRIPTION:Pre Worksop Social: The Craft Beer Co. Covent Garden. Central L
  ondon and easy access from multiple public transport lines. We have reserv
  ed for 20 people.\n\nhttp://www.thecraftbeerco.com/covent-garden
@@ -426,7 +449,13 @@ ATTENDEE:Mickey Nasriachi
 ATTENDEE:Leo Lapworth
 ATTENDEE:Sawyer X
 ATTENDEE:Leon Brocard
-COMMENT:27 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Graham Barr
+ATTENDEE:Tom Hukins
+ATTENDEE:Mohammad Anwar
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:33 attendees
 DESCRIPTION:Post Worksop Social: The Eagle\, Hoxton. Approx 10min walk from
   the venue. We have reserved for 25 people.\n\nhttps://www.theeaglehoxton.
  co.uk
@@ -451,7 +480,9 @@ ATTENDEE:Robert Rothenberg
 ATTENDEE:yadu singh
 ATTENDEE:Iain Campbell
 ATTENDEE:Leon Brocard
-COMMENT:12 attendees
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:14 attendees
 DESCRIPTION:Stuart is the President of The Perl and Raku Foundation (TPRF) 
  and will be giving a short presentation about the foundation and it's acti
  vities.\n\nThis will be followed by an open discussion session where the a
@@ -468,7 +499,9 @@ URL:http://act.yapc.eu/lpw2024/backup/talk/7918
 END:VEVENT
 BEGIN:VEVENT
 ATTENDEE:Leon Brocard
-COMMENT:1 attendees
+ATTENDEE:AndyR
+ATTENDEE:Jess Robinson
+COMMENT:3 attendees
 DESCRIPTION:Binary Data visualisation normally requires modules with powerf
  ul external dependencies.  But sometimes you need something quick bloat fr
  ee\, and exploit Perls powerful handling of binary data.  Sometimes you ma
@@ -507,7 +540,11 @@ ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
 ATTENDEE:Joel Vivian
 ATTENDEE:Leon Brocard
-COMMENT:20 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+COMMENT:24 attendees
 DESCRIPTION:A light-hearted but still serious talk (with copious examples) 
  on why people’s names are a problem\, and representing them in software is
   not as easy as you think it is\, even after you’ve thought about it.
@@ -532,9 +569,9 @@ DESCRIPTION:The recent upsurge in functional programming techniques for web
   functional approach of Elmlang but is more suited for backend server side
   page assembly. A practical example of functional HTML in action will be d
  emonstrated that uses HTMX\, Pico CSS and Raku Cro on the server side.
-DTEND;TZID=Europe/London:20241026T144000
-DTSTART;TZID=Europe/London:20241026T142000
-LOCATION:The Library
+DTEND;TZID=Europe/London:20241026T120000
+DTSTART;TZID=Europe/London:20241026T114000
+LOCATION:The Study
 ORGANIZER:Steve Roe
 SUMMARY:Raku HTML::Functional
 UID:http://act.yapc.eu/lpw2024/backup/talk/7923
@@ -542,7 +579,8 @@ URL:http://act.yapc.eu/lpw2024/backup/talk/7923
 END:VEVENT
 BEGIN:VEVENT
 ATTENDEE:Boyd Duffee
-COMMENT:1 attendees
+ATTENDEE:Thibault Duponchelle
+COMMENT:2 attendees
 DESCRIPTION:Massification of higher education results in large class size i
  n learning and teaching environment\, and another fact is that\, in engine
  ering education\, there are a number of modules that are taught by simulat
@@ -569,7 +607,8 @@ ATTENDEE:H.Merijn Brand
 ATTENDEE:Robert Rothenberg
 ATTENDEE:Sébastien Feugère
 ATTENDEE:Iain Campbell
-COMMENT:5 attendees
+ATTENDEE:José Joaquín Atria
+COMMENT:6 attendees
 DESCRIPTION:Let's meet up for an open conversation about the Perl and Raku 
  communities' security posture!\n\nTopics we can discuss: The security of m
  odules\, tooling\, community infrastructure and the greater Open Source su
@@ -598,7 +637,9 @@ ATTENDEE:Iain Campbell
 ATTENDEE:Dimitrios Kechagias
 ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
-COMMENT:13 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Graham Barr
+COMMENT:15 attendees
 DESCRIPTION:Lunch!
 DTEND;TZID=Europe/London:20241026T130000
 DTSTART;TZID=Europe/London:20241026T120000
@@ -618,7 +659,10 @@ ATTENDEE:Richard Pillar
 ATTENDEE:yadu singh
 ATTENDEE:Iain Campbell
 ATTENDEE:sujin seo
-COMMENT:9 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Robert Acock
+COMMENT:12 attendees
 DESCRIPTION:Registration
 DTEND;TZID=Europe/London:20241026T120000
 DTSTART;TZID=Europe/London:20241026T090000
@@ -645,7 +689,11 @@ ATTENDEE:yadu singh
 ATTENDEE:Dimitrios Kechagias
 ATTENDEE:Boyd Duffee
 ATTENDEE:Ian Boddison
-COMMENT:16 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:20 attendees
 DESCRIPTION:Some information on the workshop and such
 DTEND;TZID=Europe/London:20241026T092500
 DTSTART;TZID=Europe/London:20241026T092000
@@ -663,7 +711,10 @@ ATTENDEE:H.Merijn Brand
 ATTENDEE:Chris Carline
 ATTENDEE:James Green
 ATTENDEE:Iain Campbell
-COMMENT:7 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+COMMENT:10 attendees
 DESCRIPTION:Snack break...
 DTEND;TZID=Europe/London:20241026T153000
 DTSTART;TZID=Europe/London:20241026T151000
@@ -699,7 +750,12 @@ ATTENDEE:Dimitrios Kechagias
 ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
 ATTENDEE:Joel Vivian
-COMMENT:25 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:30 attendees
 DESCRIPTION:Bite sized talks. Max 5min a piece. Including (but possibly not
   limited to):\n\n‎* Deriv | 25 Years‎\n‎* Perl School Catch-up‎\n‎* User P
  ass Data Manager‎\n‎* This Is A Camel‎\n‎* App::sdview - a structured docu
@@ -720,8 +776,8 @@ ATTENDEE:Richard Pillar
 COMMENT:2 attendees
 DESCRIPTION:The study can hold 15 people seating with room for a presenter.
   We can host a breakout\, BOF\, hackspace\, whatever you suggest.
-DTEND;TZID=Europe/London:20241026T120000
-DTSTART;TZID=Europe/London:20241026T105000
+DTEND;TZID=Europe/London:20241026T113000
+DTSTART;TZID=Europe/London:20241026T093000
 LOCATION:The Study
 ORGANIZER:Lee Johnson
 SUMMARY:Open Session
@@ -753,7 +809,11 @@ ATTENDEE:Dimitrios Kechagias
 ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
 ATTENDEE:Leon Brocard
-COMMENT:24 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:28 attendees
 DESCRIPTION:I'd like to talk about what it took to organise this year's LPW
  . What it takes to organise one\, in general\, and think about the future 
  of the event.
@@ -822,8 +882,8 @@ DESCRIPTION:Chemometrics with Perl & Pharmaceutical Applications\n\nAndrew
  need for the\nend-user to perform chemometrics.\nThe presentation will inc
  lude illustration of the use of Perl for NIR analysis of pharmaceuticals a
  nd for several applications.
-DTEND;TZID=Europe/London:20241026T104000
-DTSTART;TZID=Europe/London:20241026T102000
+DTEND;TZID=Europe/London:20241026T132000
+DTSTART;TZID=Europe/London:20241026T130000
 LOCATION:The Study
 ORGANIZER:Andrew O'Neil
 SUMMARY:Chemometrics with Perl & Pharmaceutical Applications
@@ -834,7 +894,11 @@ BEGIN:VEVENT
 ATTENDEE:Ian Boddison
 ATTENDEE:John McCarthy
 ATTENDEE:Sаm Kington
-COMMENT:3 attendees
+ATTENDEE:John Imrie
+ATTENDEE:Michael Woods
+ATTENDEE:Toby Inkster
+ATTENDEE:AndyR
+COMMENT:7 attendees
 DESCRIPTION:Many are still composing their SQL queries dangerously by assem
  bling their queries with string interpolation.\n\nNot only are such querie
  s slow and prone to errors\, they are also loopholes for injections.\n\nBu
@@ -860,7 +924,8 @@ END:VEVENT
 BEGIN:VEVENT
 ATTENDEE:Jay Vogt
 ATTENDEE:Boyd Duffee
-COMMENT:2 attendees
+ATTENDEE:AndyR
+COMMENT:3 attendees
 DESCRIPTION:A session of science themed talks\, which will likely take the 
  form:\n\n- 4x lightning talks (30min)\n- 1x 40min talk\n- 1x 20min talk\n\
  nMore details to be confirmed.
@@ -888,5 +953,26 @@ ORGANIZER:Ian Boddison
 SUMMARY:Perl\, AI and Your System
 UID:http://act.yapc.eu/lpw2024/backup/talk/7941
 URL:http://act.yapc.eu/lpw2024/backup/talk/7941
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:2 attendees
+DESCRIPTION:Do you remember Equifax? How did someone manage to steal the da
+ ta of almost 200 million users? Well\, Equifax simply fell victim to a vul
+ nerability on a framework\, Struts: nothing wrong with the code that the d
+ evelopers wrote. No social skills needed for that hack\, just some code. \
+ n\nAfter a clear introduction to the problems related to frameworks and li
+ braries\, with a couple of other illustrious examples\, we will take a loo
+ k at possible prevention strategies. We will also ask for you help to crea
+ te the first completely free IDE integration\, assuming you guys are using
+  an IDE :)
+DTEND;TZID=Europe/London:20241026T144000
+DTSTART;TZID=Europe/London:20241026T142000
+LOCATION:The Library
+ORGANIZER:Nana Insaidoo
+SUMMARY:opensource vulnerabilities and where to find them
+UID:http://act.yapc.eu/lpw2024/backup/talk/7942
+URL:http://act.yapc.eu/lpw2024/backup/talk/7942
 END:VEVENT
 END:VCALENDAR
