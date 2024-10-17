@@ -105,6 +105,12 @@
             <img src="[% make_uri_info('images/logos/scaled/meterian.jpg') %]" border="0" alt="Meterian" class="img-responsive" style="margin-bottom: 2em;">
         </a>
     </div>
+
+    <div class="col-xs-12 col-xs-offset-1 text-center;">
+        <a href="https://www.perlfoundation.org/">
+            <img src="[% make_uri_info('images/logos/scaled/logo_tprf.png') %]" border="0" alt="TPRF" class="img-responsive" style="margin-bottom: 2em;">
+        </a>
+    </div>
 <!--
     <div class="col-xs-12 col-xs-offset-1 text-center;">
         <a href="https://adestra.com/">
