@@ -9,11 +9,11 @@
     <meta property="og:description" content="The London Perl &amp; Raku Workshop">
     <meta property="og:image" content="http://act.yapc.eu/lpw2024/images/design/london-skyline.jpg">
     <link rel="shortcut icon" type="image/png" href="https://act.yapc.eu/favicon.png">
-    <link rel="stylesheet" type="text/css" href="schedule_fichiers/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="schedule_fichiers/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="schedule_fichiers/style.css">
+    <link rel="stylesheet" type="text/css" href="schedule_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="schedule_files/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="schedule_files/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="schedule_fichiers/jquery-3.4.1.slim.min.js"></script>
+    <script src="schedule_files/jquery-3.4.1.slim.min.js"></script>
     <title>London Perl &amp; Raku Workshop 2024 | Schedule</title> <!-- JSON-LD -->
 <script type="application/ld+json">
 {
@@ -87,9 +87,15 @@
   </div>
 
   <div class="collapse navbar-collapse" id="nav-menu-options">
-    <ul class="nav navbar-nav navbar-right">  <li> <a href="https://act.yapc.eu/lpw2024/news"><i class="fa fa-newspaper-o hidden-md hidden-lg"></i><span class="hidden-sm"> News</span></a> </li>
-   <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <ul class="nav navbar-nav navbar-right">  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-newspaper-o hidden-md hidden-lg"></i><span class="hidden-sm"> News</span> <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu"> <li> <a href="https://act.yapc.eu/lpw2024/news">News</a> </li>
+ <li> <a href="https://act.yapc.eu/lpw2024/newsadmin">News Administration</a> </li>
+ </ul>
+  </li>   <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     <i class="fa fa-bullhorn hidden-md hidden-lg"></i><span class="hidden-sm"> Conference</span> <b class="caret"></b>
   </a>
   <ul class="dropdown-menu">
@@ -104,25 +110,40 @@
     <li><a href="https://act.yapc.eu/lpw2024/slideshows.html">Slideshow</a></li>
     <li class="divider"></li>
     <li><a href="https://act.yapc.eu/lpw2024/search">User Search</a></li>
-    <li><a href="https://act.yapc.eu/lpw2024/stats">User Statistics</a></li>    </ul>
+    <li><a href="https://act.yapc.eu/lpw2024/stats">User Statistics</a></li>  <li class="divider"></li>
+      <li><a href="https://act.yapc.eu/lpw2024/export">CSV export </a></li>
+      <li><a href="https://act.yapc.eu/lpw2024/confirm_attend">Confirm Attendance</a></li>
+      <li><a href="https://act.yapc.eu/lpw2024/create">Register a new user</a></li>   <li class="divider"></li>
+      <li><a href="https://act.yapc.eu/lpw2024/payments">Payments</a></li>
+      <li><a href="https://act.yapc.eu/lpw2024/csv/payments">Payments (CSV)</a></li>
+      <li><a href="https://act.yapc.eu/lpw2024/csv/payment_items">Payment Details (CSV)</a></li>   <li class="divider"></li>
+      <li><a href="https://act.yapc.eu/lpw2024/rights"> Rights management </a></li><li>  </li></ul>
 </li>
  <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     <i class="fa fa-calendar hidden-md hidden-lg"></i><span class="hidden-sm"> Talks &amp; Events</span> <b class="caret"></b>
   </a>
   <ul class="dropdown-menu">
     <li><a href="https://act.yapc.eu/lpw2024/talks">Talks</a></li>
     <li><a href="https://act.yapc.eu/lpw2024/favtalks">Favourite talks</a></li>  <li><a href="https://act.yapc.eu/lpw2024/newtalk">Submit a talk</a></li>   <li class="divider"></li>
-      <li><a href="https://act.yapc.eu/lpw2024/schedule">Schedule</a></li>  <li><a href="https://act.yapc.eu/lpw2024/timetable.ics">iCal export</a></li>   <li class="divider"></li>
-      <li><a href="https://act.yapc.eu/lpw2024/lunch.html">Lunch &amp; Socials</a>  </li></ul>
+      <li><a href="https://act.yapc.eu/lpw2024/schedule">Schedule</a></li>  <li><a href="https://act.yapc.eu/lpw2024/myschedule">My schedule</a>  </li><li><a href="https://act.yapc.eu/lpw2024/timetable.ics">iCal export</a></li>  <li><a href="https://act.yapc.eu/lpw2024/ical_import">iCal import</a></li>
+        <li><a href="https://act.yapc.eu/lpw2024/export_talks">CSV export</a></li>   <li class="divider"></li>
+      <li><a href="https://act.yapc.eu/lpw2024/lunch.html">Lunch &amp; Socials</a>  </li><li class="divider"></li>
+      <li><a href="https://act.yapc.eu/lpw2024/tracks">Tracks</a></li>
+      <li><a href="https://act.yapc.eu/lpw2024/trackedit">Add a new track</a></li>
+
+       <li class="divider"></li>
+      <li><a href="https://act.yapc.eu/lpw2024/events">Events</a></li>
+      <li><a href="https://act.yapc.eu/lpw2024/newevent">Submit a new event</a></li>  </ul>
 </li>
    <!-- user menu -->  <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-      <i class="fa fa-user hidden-md hidden-lg"></i><span class="hidden-sm"> Register/Log In</span> <b class="caret"></b>
+      <i class="fa fa-user hidden-md hidden-lg"></i><span class="hidden-sm"> leejo</span> <b class="caret"></b>
     </a>
-    <ul class="dropdown-menu"> <li> <a href="https://act.yapc.eu/lpw2024/main">Log in</a> </li>
-  <li class="divider"></li> <li> <a href="https://act.yapc.eu/lpw2024/register">New user</a> </li>
-  </ul>
+    <ul class="dropdown-menu">  <li> <a href="https://act.yapc.eu/lpw2024/main">Edit profile</a> </li>
+ <li> <a href="https://act.yapc.eu/lpw2024/user/10652">View</a> </li>
+ <li class="divider"></li> <li> <a href="https://act.yapc.eu/lpw2024/logout">Logout</a> </li>
+ </ul>
   </li>   </ul>
   </div>
 </div>
@@ -188,8 +209,8 @@ if (window.act) {
             </thead>
 
             <tbody>  <tr class="header">   <td class="header">09:00</td>    <td valign="top" rowspan="10" class="r1">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7928"><b>‎Registration‎</b></a> (180&nbsp;min, )  <span id="starcount-7928" style="white-space:nowrap">  <span class="starcount">12</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7928" value="7928" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7928"><b>‎Registration‎</b></a> (180&nbsp;min, ) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7928">edit</a>) <span id="starcount-7928" style="white-space:nowrap">  <span class="starcount">17</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -204,8 +225,8 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">09:20</td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/8609">Julien Fiegehenn (‎simbabque‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7929"><b>‎Hello &amp; Welcome [Back]‎</b></a> (5&nbsp;min, English)  <span id="starcount-7929" style="white-space:nowrap">  <span class="starcount">21</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7929" value="7929" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/8609">Julien Fiegehenn (‎simbabque‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7929"><b>‎Hello &amp; Welcome [Back]‎</b></a> (5&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7929">edit</a>) <span id="starcount-7929" style="white-space:nowrap">  <span class="starcount">34</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -229,16 +250,16 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">09:30</td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/6354">Paul Evans (‎LeoNerd‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7904"><b>‎Perl in 2030‎</b></a> (40&nbsp;min, English)  <span id="starcount-7904" style="white-space:nowrap">  <span class="starcount">27</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7904" value="7904" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/6354">Paul Evans (‎LeoNerd‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7904"><b>‎Perl in 2030‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7904">edit</a>) <span id="starcount-7904" style="white-space:nowrap">  <span class="starcount">38</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/259">Dave Cross (‎davorg‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7889"><b>‎Perl Diver‎</b></a> (40&nbsp;min, English)  <span id="starcount-7889" style="white-space:nowrap">  <span class="starcount">8</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7889" value="7889" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/259">Dave Cross (‎davorg‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7889"><b>‎Perl Diver‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7889">edit</a>) <span id="starcount-7889" style="white-space:nowrap">  <span class="starcount">13</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" rowspan="5" class="r4">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7932"><b>‎Open Session‎</b></a> (120&nbsp;min, )  <span id="starcount-7932" style="white-space:nowrap">  <span class="starcount">2</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7932" value="7932" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7932"><b>‎Open Session‎</b></a> (120&nbsp;min, ) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7932">edit</a>) <span id="starcount-7932" style="white-space:nowrap">  <span class="starcount">4</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -253,12 +274,12 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">10:20</td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/2583">Dave Lambley</a> - <a href="https://act.yapc.eu/lpw2024/talk/7907">‎Cloudy Perl, how it looks now‎</a> (20&nbsp;min, English)  <span id="starcount-7907" style="white-space:nowrap">  <span class="starcount">25</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7907" value="7907" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/2583">Dave Lambley</a> - <a href="https://act.yapc.eu/lpw2024/talk/7907">‎Cloudy Perl, how it looks now‎</a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7907">edit</a>) <span id="starcount-7907" style="white-space:nowrap">  <span class="starcount">38</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12637">Richard Hainsworth</a> - <a href="https://act.yapc.eu/lpw2024/talk/7902"><b>‎Using new RakuDoc v2‎</b></a> (20&nbsp;min, English)  <span id="starcount-7902" style="white-space:nowrap">  <span class="starcount">2</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7902" value="7902" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12637">Richard Hainsworth</a> - <a href="https://act.yapc.eu/lpw2024/talk/7902"><b>‎Using new RakuDoc v2‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7902">edit</a>) <span id="starcount-7902" style="white-space:nowrap">  <span class="starcount">4</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -273,12 +294,12 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">10:50</td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12550">Stuart Mackintosh (‎SJM‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7918"><b>‎TPRF Presentation and discussion‎</b></a> (40&nbsp;min, English)  <span id="starcount-7918" style="white-space:nowrap">  <span class="starcount">14</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7918" value="7918" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/12550">Stuart Mackintosh (‎SJM‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7918"><b>‎TPRF Presentation and discussion‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7918">edit</a>) <span id="starcount-7918" style="white-space:nowrap">  <span class="starcount">20</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12615">Rolf Langsdorf (‎LanX‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7937"><b>‎Hold My Place - Automating SQL placeholders by de-interpolating strings‎</b></a> (40&nbsp;min, English)  <span id="starcount-7937" style="white-space:nowrap">  <span class="starcount">7</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7937" value="7937" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12615">Rolf Langsdorf (‎LanX‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7937"><b>‎Hold My Place - Automating SQL placeholders by de-interpolating strings‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7937">edit</a>) <span id="starcount-7937" style="white-space:nowrap">  <span class="starcount">13</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -296,16 +317,16 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">11:40</td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/8682">James Green (‎jkg‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7909">‎I Adopted a Dist, and This is What Happened‎</a> (20&nbsp;min, English)  <span id="starcount-7909" style="white-space:nowrap">  <span class="starcount">13</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7909" value="7909" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/8682">James Green (‎jkg‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7909">‎I Adopted a Dist, and This is What Happened‎</a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7909">edit</a>) <span id="starcount-7909" style="white-space:nowrap">  <span class="starcount">18</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/11987">José Joaquín Atria (‎JJ‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7895"><b>‎Using OpenTelemetry in your Perl libraries and applications‎</b></a> (20&nbsp;min, English)  <span id="starcount-7895" style="white-space:nowrap">  <span class="starcount">15</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7895" value="7895" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/11987">José Joaquín Atria (‎JJ‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7895"><b>‎Using OpenTelemetry in your Perl libraries and applications‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7895">edit</a>) <span id="starcount-7895" style="white-space:nowrap">  <span class="starcount">25</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r4">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12628">Steve Roe (‎librasteve‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7923"><b>‎Raku HTML::Functional‎</b></a> (20&nbsp;min, English)  <span id="starcount-7923" style="white-space:nowrap">  <span class="starcount">3</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7923" value="7923" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12628">Steve Roe (‎librasteve‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7923"><b>‎Raku HTML::Functional‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7923">edit</a>) <span id="starcount-7923" style="white-space:nowrap">  <span class="starcount">5</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -323,23 +344,23 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r5">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7927"><b>‎Lunch‎</b></a> (60&nbsp;min, )  <span id="starcount-7927" style="white-space:nowrap">  <span class="starcount">15</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7927" value="7927" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7927"><b>‎Lunch‎</b></a> (60&nbsp;min, ) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7927">edit</a>) <span id="starcount-7927" style="white-space:nowrap">  <span class="starcount">20</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">13:00</td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" rowspan="2" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/244">Salve J. Nilsen (‎sjn‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7915"><b>‎Metadata, CPAN, FOSS Supply Chains, and EU's Cyber Resilience Act‎</b></a> (40&nbsp;min, English)  <span id="starcount-7915" style="white-space:nowrap">  <span class="starcount">17</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7899" value="7899" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/5015">Leon Timmermans (‎leont‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7899"><b>‎A modern introduction to XS‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7899">edit</a>) <span id="starcount-7899" style="white-space:nowrap">  <span class="starcount">30</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" rowspan="2" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/5015">Leon Timmermans (‎leont‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7899"><b>‎A modern introduction to XS‎</b></a> (40&nbsp;min, English)  <span id="starcount-7899" style="white-space:nowrap">  <span class="starcount">19</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7915" value="7915" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/244">Salve J. Nilsen (‎sjn‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7915"><b>‎Metadata, CPAN, FOSS Supply Chains, and EU's Cyber Resilience Act‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7915">edit</a>) <span id="starcount-7915" style="white-space:nowrap">  <span class="starcount">21</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r4">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12656">Andrew O'Neil</a> - <a href="https://act.yapc.eu/lpw2024/talk/7936"><b>‎Chemometrics with Perl &amp; Pharmaceutical Applications‎</b></a> (20&nbsp;min, English)  <span id="starcount-7936" style="white-space:nowrap">  <span class="starcount">2</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7936" value="7936" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12656">Andrew O'Neil</a> - <a href="https://act.yapc.eu/lpw2024/talk/7936"><b>‎Chemometrics with Perl &amp; Pharmaceutical Applications‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7936">edit</a>) <span id="starcount-7936" style="white-space:nowrap">  <span class="starcount">5</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -372,16 +393,16 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/8722">Mohammad Anwar (‎manwar‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7900">‎What's new in Perl v5.40?‎</a> (20&nbsp;min, English)  <span id="starcount-7900" style="white-space:nowrap">  <span class="starcount">19</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7900" value="7900" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/8722">Mohammad Anwar (‎manwar‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7900">‎What's new in Perl v5.40?‎</a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7900">edit</a>) <span id="starcount-7900" style="white-space:nowrap">  <span class="starcount">32</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10257">Paul Cochrane (‎ptc‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7912"><b>‎Fixing a fifteen-year-old curve fit bug‎</b></a> (20&nbsp;min, English)  <span id="starcount-7912" style="white-space:nowrap">  <span class="starcount">11</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7912" value="7912" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10257">Paul Cochrane (‎ptc‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7912"><b>‎Fixing a fifteen-year-old curve fit bug‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7912">edit</a>) <span id="starcount-7912" style="white-space:nowrap">  <span class="starcount">13</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" rowspan="5" class="r4">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/244">Salve J. Nilsen (‎sjn‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7925"><b>‎CPAN Security BoF‎</b></a> (80&nbsp;min, English)  <span id="starcount-7925" style="white-space:nowrap">  <span class="starcount">6</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7925" value="7925" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/244">Salve J. Nilsen (‎sjn‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7925"><b>‎CPAN Security BoF‎</b></a> (80&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7925">edit</a>) <span id="starcount-7925" style="white-space:nowrap">  <span class="starcount">9</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -402,12 +423,12 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/323">Max Maischein (‎Corion‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7903">‎Managing recent files from Perl‎</a> (20&nbsp;min, English)  <span id="starcount-7903" style="white-space:nowrap">  <span class="starcount">14</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7903" value="7903" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/323">Max Maischein (‎Corion‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7903">‎Managing recent files from Perl‎</a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7903">edit</a>) <span id="starcount-7903" style="white-space:nowrap">  <span class="starcount">22</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12672">Nana Insaidoo</a> - <a href="https://act.yapc.eu/lpw2024/talk/7942">‎opensource vulnerabilities and where to find them‎</a> (20&nbsp;min, English)  <span id="starcount-7942" style="white-space:nowrap">  <span class="starcount">2</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7942" value="7942" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12672">Nana Insaidoo</a> - <a href="https://act.yapc.eu/lpw2024/talk/7942">‎opensource vulnerabilities and where to find them‎</a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7942">edit</a>) <span id="starcount-7942" style="white-space:nowrap">  <span class="starcount">8</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -428,19 +449,19 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/2747">Mike Whitaker (‎Penfold‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7921"><b>‎Names are hard‎</b></a> (20&nbsp;min, English)  <span id="starcount-7921" style="white-space:nowrap">  <span class="starcount">24</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7921" value="7921" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/2747">Mike Whitaker (‎Penfold‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7921"><b>‎Names are hard‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7921">edit</a>) <span id="starcount-7921" style="white-space:nowrap">  <span class="starcount">36</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12651">Yujia Zhai</a> - <a href="https://act.yapc.eu/lpw2024/talk/7924"><b>‎Perl/Raku Based Coursework Design for Engineering Education‎</b></a> (20&nbsp;min, English)  <span id="starcount-7924" style="white-space:nowrap">  <span class="starcount">2</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7924" value="7924" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12651">Yujia Zhai</a> - <a href="https://act.yapc.eu/lpw2024/talk/7924"><b>‎Perl/Raku Based Coursework Design for Engineering Education‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7924">edit</a>) <span id="starcount-7924" style="white-space:nowrap">  <span class="starcount">6</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">15:10</td>    <td valign="top" class="r1">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7930"><b>‎Snack Break‎</b></a> (20&nbsp;min, )  <span id="starcount-7930" style="white-space:nowrap">  <span class="starcount">10</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7930" value="7930" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7930"><b>‎Snack Break‎</b></a> (20&nbsp;min, ) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7930">edit</a>) <span id="starcount-7930" style="white-space:nowrap">  <span class="starcount">15</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -458,16 +479,16 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" rowspan="3" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/6257">Andrew Solomon (‎illy‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7910"><b>‎Perl Talent Management: How Logicly attracts, develops, and retains their Perl developers.‎</b></a> (40&nbsp;min, English)  <span id="starcount-7910" style="white-space:nowrap">  <span class="starcount">21</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7910" value="7910" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/6257">Andrew Solomon (‎illy‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7910"><b>‎Perl Talent Management: How Logicly attracts, develops, and retains their Perl developers.‎</b></a> (40&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7910">edit</a>) <span id="starcount-7910" style="white-space:nowrap">  <span class="starcount">31</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12647">Ian Boddison (‎Bod‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7941"><b>‎Perl, AI and Your System‎</b></a> (20&nbsp;min, English)  <span id="starcount-7941" style="white-space:nowrap">  <span class="starcount">2</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7941" value="7941" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12647">Ian Boddison (‎Bod‎)</a> - <a href="https://act.yapc.eu/lpw2024/talk/7941"><b>‎Perl, AI and Your System‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7941">edit</a>) <span id="starcount-7941" style="white-space:nowrap">  <span class="starcount">11</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top" rowspan="5" class="r4">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12656">Andrew O'Neil</a> - <a href="https://act.yapc.eu/lpw2024/talk/7939"><b>‎Science Perl Talks‎</b></a> (100&nbsp;min, English)  <span id="starcount-7939" style="white-space:nowrap">  <span class="starcount">3</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7939" value="7939" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12656">Andrew O'Neil</a> - <a href="https://act.yapc.eu/lpw2024/talk/7939"><b>‎Science Perl Talks‎</b></a> (100&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7939">edit</a>) <span id="starcount-7939" style="white-space:nowrap">  <span class="starcount">6</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -485,8 +506,8 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r3">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/12280">Saif Ahmed</a> - <a href="https://act.yapc.eu/lpw2024/talk/7920">‎Bit Vector Arrays to Pixels in a Terminal with One Subroutine‎</a> (10&nbsp;min, English)  <span id="starcount-7920" style="white-space:nowrap">  <span class="starcount">3</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7920" value="7920" title="add to personal schedule"> <a href="https://act.yapc.eu/lpw2024/user/12280">Saif Ahmed</a> - <a href="https://act.yapc.eu/lpw2024/talk/7920"><b>‎Bit Vector Arrays to Pixels in a Terminal with One Subroutine‎</b></a> (10&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7920">edit</a>) <span id="starcount-7920" style="white-space:nowrap">  <span class="starcount">7</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -507,8 +528,8 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7931"><b>‎Lightning Talks‎</b></a> (50&nbsp;min, )  <span id="starcount-7931" style="white-space:nowrap">  <span class="starcount">31</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7931" value="7931" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7931"><b>‎Lightning Talks‎</b></a> (50&nbsp;min, ) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7931">edit</a>) <span id="starcount-7931" style="white-space:nowrap">  <span class="starcount">45</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -535,8 +556,8 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r2">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7935"><b>‎Thanks &amp; The Future of LPW‎</b></a> (20&nbsp;min, English)  <span id="starcount-7935" style="white-space:nowrap">  <span class="starcount">29</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7935" value="7935" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7935"><b>‎Thanks &amp; The Future of LPW‎</b></a> (20&nbsp;min, English) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7935">edit</a>) <span id="starcount-7935" style="white-space:nowrap">  <span class="starcount">45</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -575,8 +596,8 @@ if (window.act) {
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
                    </div>
                  </td>    <td valign="top" class="r5">
-                   <div class="alert"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7917"><b>‎Post Workshop Social‎</b></a> (240&nbsp;min, )  <span id="starcount-7917" style="white-space:nowrap">  <span class="starcount">33</span>
-                         <img style="vertical-align:middle" src="schedule_fichiers/picked.gif">  </span>
+                   <div class="alert">  <input type="checkbox" name="mt-7917" value="7917" title="remove from personal schedule" checked="checked"> <a href="https://act.yapc.eu/lpw2024/user/10652">Lee Johnson</a> - <a href="https://act.yapc.eu/lpw2024/talk/7917"><b>‎Post Workshop Social‎</b></a> (240&nbsp;min, ) (<a href="https://act.yapc.eu/lpw2024/edittalk?talk_id=7917">edit</a>) <span id="starcount-7917" style="white-space:nowrap">  <span class="starcount">43</span>
+                         <img style="vertical-align:middle" src="schedule_files/picked.gif">  </span>
                    </div>
                  </td>   </tr>  <tr class="header">   <td class="header">22:30</td>    <td valign="top">
                    <div class="alert">   <span id="starcount-" style="white-space:nowrap">  </span>
@@ -599,7 +620,8 @@ if (window.act) {
 
 
         <div class="panel-footer">
-          <a class="btn btn-default btn-lg" href="https://act.yapc.eu/lpw2024/timetable.ics">iCal export</a>  </div>
+          <a class="btn btn-default btn-lg" href="https://act.yapc.eu/lpw2024/timetable.ics">iCal export</a>  <input type="hidden" name="day" value="2024-10-26">
+            <input class="btn btn-lg btn-primary" type="submit" value="Submit">  </div>
       </form>
     </div>
 
@@ -622,7 +644,7 @@ if (window.act) {
 </div>
  </div>
 
-    <script src="schedule_fichiers/bootstrap.min.js"></script>
+    <script src="schedule_files/bootstrap.min.js"></script>
   
 
  </body></html>
